@@ -1,0 +1,64 @@
+@charset "utf-8";
+*{margin: 0; padding: 0; box-sizing: border-box;}
+#container{width: 100%;}
+
+body{
+    background-color: rgb(133, 133, 133);
+    color: #fff;
+    font-family: Gaegu;
+}
+
+/* header 스타일 */
+header{width: 100%; height: 320px;}
+nav{width: 100%; height: 60px; background: #000;
+    /*position: fixed; -상단 메뉴 계속 떠있음*/}
+nav #main-nav{list-style: none; text-align: center;} 
+nav #main-nav li{display: inline-block; line-height: 60px;
+    margin: 0 30px;}
+nav #main-nav li a{text-decoration: none; color: white;}
+nav #main-nav li a:hover{color: orange;}
+#main-pic img{width: 100%; height: 260px;}
+
+
+/* 본문 영역*/
+section{height: 330px; padding: 15px 5%; margin: 30px 0;}
+
+section .page-title{margin-top: 30px;}
+section h1{font-family: "Nanum Pen Script", "맑은 고딕"; font-size: 2em;}
+section p{line-height: 2em; font-size: 1em;}
+section .content{margin: 10px  auto; padding: 10px; font-size: 1.5em;}
+section .photo{display: none;}
+#choice h2{line-height: 2;}
+#choice ol{padding-left: 30px;}
+#choice li{line-height: 2em;}
+
+/*footer 영역*/
+footer{height: 80px; border-top: 2px solid #222; text-align: center; font-size: 1.5em;}
+footer #bottomMenu{List-style: none; margin: 10px 10px 10px 60px;}
+footer #bottomMenu li{display: inline-block; margin: 10px 0;
+border-right: 1px solid #ccc; padding: 0 10px;}
+footer #bottomMenu li a{text-decoration: none; color: #444;}
+footer #bottomMenu li:last-child{border: none;}
+
+/* 태블릿 기준 - 780px 이상 */
+@media screen and (min-width: 780px) {
+    header{height: 350px;}
+    #main-pic img{height: 290px;}
+    section{height: 400px;}
+    #intro, #choice{float: left; width: 50%;}
+    #map{clear: both;}
+    #map .photo{display: block; float: left; margin-right: 50px;}
+}
+
+/* pc 기준 - 1200px 이상 */
+@media screen and (min-width: 1200px) {
+    #container{width: 1200px; margin: 0 auto;}
+    header{height: 380px;}
+    #main-pic img{height: 320px;}
+    section{height: 350px;}
+    #intro, #choice, #map{width: 100%; padding: 10px 5%;}
+    section .content .photo{display: block;}
+    section p{line-height: 2.5;}
+    #intro .photo, #map .photo{float:left; margin-right: 20px;}
+    #choice .photo{float: right; margin-right: 50px;}
+}

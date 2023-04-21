@@ -1,0 +1,12 @@
+#wrapper{
+    width: 600px; margin:0 auto;
+    text-align: center;
+}
+/*폼 스타일*/
+form{
+    background-color: #0094ff; padding: 30px;
+}
+input{width: 420px; padding: 10px;
+}
+.btnAdd{width: 60px; padding: 10px;}
+

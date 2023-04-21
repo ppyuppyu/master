@@ -1,0 +1,113 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@500&family=Noto+Sans+KR:wght@500&display=swap');
+
+/* 전체 스타일 */
+*{
+    margin: 0; padding: 0;
+}
+/* 16:9 */
+#container{
+    width: 100%;
+    margin: 0 auto;}
+/* main 영역 스타일 */
+main{
+    width: 1200px; margin: 0 auto; box-sizing: border-box;
+
+}    
+/* header 영역 스타일 */
+header{
+    height: 80px;
+    background: rgb(22, 109, 22);
+}
+header #logo{
+    width: 300px; float: left; padding-left: 30px; line-height: 80px;
+}
+#logo h1 a{color: yellowgreen; text-decoration: none; font-family: merienda;}
+nav{width: 800px; float: right; line-height: 80px; }
+nav #topMenu{list-style: none;}
+#topMenu li{display: inline-block; padding: 0 20px;}
+#topMenu li a{color: white; text-decoration: none;} 
+#topMenu li a:hover{text-decoration: none; color: #2fb2fd;}
+section div{margin: 10px;}
+section p{line-height: 2;}
+#contents section{
+    margin: 30px 10px;
+}
+/* section의 높이를 지정해줌 */
+#healing, #activity{height: 300px;}
+#healing img, #activity img{
+    float: left; margin-right: 30px;
+    border-radius: 10px;
+}
+.schedule h3{margin-top: 20px;}
+.schedule ul li{
+    list-style: none; margin: 10px;
+}
+#sightseeing ul li{
+    list-style: square; margin: 10px 30px;
+}
+#sightseeing ul li a{
+    text-decoration: none;
+}
+ul li a{
+    text-decoration: none; color: blue;   
+}
+ul li a:hover{
+    text-decoration: underline; 
+}
+
+/* footer 영역 스타일 */
+footer{
+    width:1200px; height: 100px; margin: 0 auto;
+    border-top: 2px solid #555;
+}
+footer #bottomMenu{
+    list-style: none;
+    padding: 20px;
+}
+#bottomMenu li{
+    display: inline-block;
+    margin: 0;
+    border-right: 1px solid #444;
+    padding: 0px 10px;
+}
+#bottomMenu li a{
+    text-decoration: none; color: black;
+}
+#bottomMenu li:last-child{
+    border: none;
+}/* 
+#bottomMenu li:nth-child(4){
+    border: none;
+} */
+
+/* product 스타일 */
+#product p{ line-height: 2em;}
+#product h2{margin-bottom: 10px;}
+#description{width: 800px; margin: 30px auto; padding: 20px 60px; border: 1px dotted #666;
+border-top-left-radius: 30px; border-top-right-radius: 30px;}
+#description-img{margin: 0 10px 10px 10px; border-radius: 10px;}
+#receipe{width: 800px; border: 1px dotted #666; margin: 0 auto; padding: 20px 60px;}
+#receipe ol{
+    padding-left: 20px; margin-top: 10px;
+}
+#receipe ol li{
+    line-height: 1.7;
+}
+#package{
+    width: 800px; margin: 30px auto; padding: 20px 60px; border: 1px dotted #666;
+border-bottom-left-radius: 30px; border-bottom-right-radius: 30px;
+}
+#package table, th, td{border: 1px solid #ccc;border-collapse: collapse;
+padding: 10px 20px;}
+
+/* q & a 스타일 */
+#board section h2{ margin: 30px 10px; text-align: center;}
+#board #tbl_board{border: 1.5px solid rgb(23, 163, 23);
+border-collapse: collapse; width: 700px; margin: 0 auto 20px;}
+#tbl_board thead{background-color: rgb(167, 167, 120);}
+#tbl_board td:nth-child(1),
+#tbl_board td:nth-child(3), #tbl_board td:nth-child(4){text-align:center;}
+#tbl_board td:first-child(1){width: 50px;}
+.btn{text-align: right; margin-right: 250px;}
+.btn button{padding: 10px 15px; margin-bottom: 50px; cursor: pointer;}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr() function</title>
+    <script src = "./js/jquery-3.6.4.js"></script>
+    <script>
+        $(function(){
+            $('.big').click(function(){
+                $('img').attr('width', '250')
+            });
+            $('.small').click(function(){
+                $('img').attr('width', '150')
+            });
+        });
+    </script>
+</head>
+<body>
+    <h3>attr() function creates or 변경 attribute</h3>
+    
+    <p><img src= "./images/bear.jpg" alt = "곰 인형"></p>
+    <button type = "button" class = "big">expand</button>
+    <button type = "button" class = "small">shrink</button>
+</body>
+</html>

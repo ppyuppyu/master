@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+}
+#container{
+    width: 1000px;  
+    margin: 0 auto;  
+}
+nav{
+    width: 90%;
+    height: 80px;
+    background: #000099;
+   
+   
+}
+ul{
+    list-style: none;
+    text-align: right;
+    margin-right: 100px;
+    
+}
+ul li{
+    display: inline-block;
+  /*   margin: 20px;
+    padding: 10px 0px; */
+    margin: 0 20px;
+    line-height: 80px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: yellowgreen;
+}
+section{margin: 20px;}
